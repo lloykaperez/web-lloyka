@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lloyka</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel = ”stylesheet” href = ”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    </head>
+<body>
+    <header>
+        <div class="caja">
+            <img src="assets/images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Lloyka</a></li>
+                    <li><a href="portafolio.html">Porfolio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="mainContacto">
+
+        <h2 class="nota">Este formulario de contacto es un desarrollo de ejemplo, aún no está programado para recibir datos. Si quieres ponerte en contacto conmigo puedes escribirme a <a href="mailto:hola@lloyka.me">hola@lloyka.me</a>.</h2>
+
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Tu nombre y apellido aquí">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padron" required placeholder="email@tuemail.com">
+
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="+56 9 1234 5678">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="60" rows="10" id="mensaje" class="input-padron" required placeholder="Deja tu mensaje aquí"></textarea>
+
+            <fieldset>
+                <legend>¿Cómo te gustaría que te contactemos?</legend>
+
+                <label for="radioEmail"><input type="radio" name="contacto" value="email" id="radioEmail" checked>Email</label>
+    
+                <label for="radioTelefono"><input type="radio" name="contacto" value="telefono" id="radioTelefono">Telefono</label>
+    
+                <label for="radioWhatsapp"><input type="radio" name="contacto" value="whatsapp" id="radioWhatsapp">Whatsapp</label>
+
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>¿En cual horario prefiere que te contactemos?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir noticias?</label>
+            
+            <input type="submit" value="Envíame" class="enviar">
+
+        </form>
+
+        <section class="mapa">
+            <h3 class="tituloPrincipal">Ubicación</h3>
+            <p>Este mapa es un ejemplo de incrustación de elementos externos.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25549.917194680555!2d-73.0501549!3d-36.8247582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5d0f7080943%3A0x9388a850ce8442c!2sPlaza%20de%20la%20Independencia%20de%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1661815215558!5m2!1ses-419!2scl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="assets/images/logo.png" class="logoFooter">
+        <div class="redesSociales">
+            
+            <a href="https://www.linkedin.com/in/lloykaperez/" target="blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://www.behance.net/lloykaperez" target="blank"><i class="fa-brands fa-behance fa-xl"></i></a>
+            <a href="https://github.com/lloykaperez" target="blank"><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="https://www.instagram.com/lloykaperez/" target="blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+
+        </div>
+        <a href="https://app.aluracursos.com/degree/certificate/546dcb70-c43d-4fe9-b7b1-58b442201f58" target="_blank">"Principiante en Programación"</a> de Alura Latam 2022.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/679a7442e8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
